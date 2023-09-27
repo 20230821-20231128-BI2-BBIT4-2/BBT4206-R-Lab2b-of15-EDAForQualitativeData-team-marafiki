@@ -115,5 +115,8 @@
         "Zanini",
         "Zubaidi",
         "Zvoleff"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }
