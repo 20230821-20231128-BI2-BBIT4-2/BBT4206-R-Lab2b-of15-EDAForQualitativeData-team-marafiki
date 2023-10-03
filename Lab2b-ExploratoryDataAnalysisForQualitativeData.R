@@ -28,7 +28,7 @@
 # "renv" It can be installed as follows:
 # if (!is.element("renv", installed.packages()[, 1])) {
 # install.packages("renv", dependencies = TRUE,
-repos = "https://cloud.r-project.org") # nolint
+# repos = "https://cloud.r-project.org") # nolint
 # }
 # require("renv") # nolint
 
@@ -125,6 +125,8 @@ if (!is.element("dplyr", installed.packages()[, 1])) {
   repos = "https://cloud.r-project.org")
 }
 require("dplyr")
+
+
 
 ## ggplot2 - For data visualizations using the Grammar for Graphics package ----
 if (!is.element("ggplot2", installed.packages()[, 1])) {
@@ -231,6 +233,7 @@ repos = "https://cloud.r-project.org")
 require("yarrr")
 
 ## radarchart - To create interactive radar charts using ChartJS ----
+
 if (!is.element("radarchart", installed.packages()[, 1])) {
 install.packages("radarchart", dependencies = TRUE,
 repos = "https://cloud.r-project.org")
@@ -689,6 +692,7 @@ write.csv(evaluation_likes_and_wishes,
 # Examples of stopwords in English include:
 # "the," "and," "is," "in," "it," "of," "to," "for," and "with."
 
+View(stop_words)
 # Additional examples can be seen here:
 head(sample(stop_words$word, 20), 20)
 
